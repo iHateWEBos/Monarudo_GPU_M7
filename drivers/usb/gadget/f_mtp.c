@@ -560,6 +560,7 @@ static ssize_t mtp_read(struct file *fp, char __user *buf,
 #ifdef CONFIG_PERFLOCK
 		mtp_qos_enable(1);
 #endif
+
 	}
 
 	while (count > 0) {

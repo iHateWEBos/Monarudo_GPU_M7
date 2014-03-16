@@ -2135,7 +2135,7 @@ static struct wcd9xxx_pdata monarudo_tabla20_platform_data = {
 	{
 		.name = "CDC_VDDA_TX",
 		.min_uV = 1800000,
-		.max_uV = 1800000,
+		.max_uV = 1800000,msm
 		.optimum_uA = WCD9XXX_CDC_VDDA_TX_CUR_MAX,
 	},
 	{
@@ -3817,7 +3817,7 @@ static struct resource hdmi_msm_resources[] = {
 		.end   = 0x007060FF,
 		.flags = IORESOURCE_MEM,
 	},
-	{
+	{msm
 		.name  = "hdmi_msm_hdmi_addr",
 		.start = 0x04A00000,
 		.end   = 0x04A00FFF,
@@ -4117,7 +4117,7 @@ static struct platform_device *common_devices[] __initdata = {
 	&apq8064_device_cache_erp,
 #endif
 #ifdef CONFIG_PERFLOCK
-	&msm8064_device_perf_lock,
+	&apq8064_device_perf_lock,
 #endif
 	&apq_compr_dsp,
 	&apq_multi_ch_pcm,
